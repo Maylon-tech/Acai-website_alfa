@@ -30,6 +30,7 @@ border: 2px solid orange;
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
+  transform: translateX(-100vw);
 ` 
 
 export const Slide = styled.div`
@@ -37,6 +38,7 @@ export const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: ${props => props.bg};
 `
 
 export const ImgContainer = styled.div`

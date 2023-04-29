@@ -1,50 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Arrow, Button, Container, Desc, Image, ImgContainer, InfoContainer, Title, Wrapper } from './styles'
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 
+import { sliderItems } from '../data'
+
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0)
+  const handleClick = (direction) => {}
+
+
   return (
     <Container>
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={handleClick("left")}>
            <ArrowLeftOutlined />
         </Arrow>
 
         <Wrapper>
-          <Slider bg="f5fafd">
-            <ImgContainer>
-              <Image />
-            </ImgContainer>            
-            <InfoContainer>
-              <Title>Summer Sal</Title>
-              <Desc>Don't Compromise on style.! Get flat 30% off for New Arrivals.</Desc>
-              <Button>Show Now</Button>
-            </InfoContainer>
-          </Slider>
+          {
+            sliderItems.map((item) => (
 
-          <Slider bg="f5fafd">
-            <ImgContainer>
-              <Image />
-            </ImgContainer>            
-            <InfoContainer>
-              <Title>Winter Sal</Title>
-              <Desc>Don't Compromise on style.! Get flat 30% off for New Arrivals.</Desc>
-              <Button>Show Now</Button>
-            </InfoContainer>
-          </Slider>
+              <Slider bg={item.bg}>
+                <ImgContainer>
+                  <Image src={item.img} />
+                </ImgContainer>            
+                <InfoContainer>
+                  <Title>{item.title}</Title>
+                  <Desc>{item.desc}</Desc>
+                  <Button>Show Now</Button>
+                </InfoContainer>
+              </Slider>
 
-          <Slider bg="f5fafd">
-            <ImgContainer>
-              <Image />
-            </ImgContainer>            
-            <InfoContainer>
-              <Title>Popular Sal</Title>
-              <Desc>Don't Compromise on style.! Get flat 30% off for New Arrivals.</Desc>
-              <Button>Show Now</Button>
-            </InfoContainer>
-          </Slider>
+            ))
+          }
+         
         </Wrapper>
 
-        <Arrow direction="right">
+        <Arrow direction="right" onClick={handleClick("right")}>
             <ArrowRightOutlined />
         </Arrow>
 
