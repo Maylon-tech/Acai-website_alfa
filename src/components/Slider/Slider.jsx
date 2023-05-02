@@ -2,11 +2,18 @@ import React, { useState } from 'react'
 import { Arrow, Button, Container, Desc, Image, ImgContainer, InfoContainer, Title, Wrapper } from './styles'
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 
-import { sliderItems } from '../data'
+import { sliderItems } from '../../assets/data'
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0)
-  const handleClick = (direction) => {}
+  const handleClick = (direction) => {
+
+    if (direction === "left") { 
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2)
+    } else {
+      setSlideIndex(slideIndex > 2 ? slideIndex + 1 : 0)
+    }
+  }
 
 
   return (
@@ -15,7 +22,7 @@ const Slider = () => {
            <ArrowLeftOutlined />
         </Arrow>
 
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex}>
           {
             sliderItems.map((item) => (
 
