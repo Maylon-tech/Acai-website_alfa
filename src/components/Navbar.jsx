@@ -51,7 +51,6 @@ const Logo = styled.h1`
   font-weight: bold;
 `
 
-
 // Navbar - Right
 const Right = styled.div`
   flex: 1;
@@ -60,14 +59,11 @@ const Right = styled.div`
   justify-content: flex-end;
 `
 
-
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
 `
-
-
 
 const Navbar = () => {
   return (
