@@ -1,14 +1,14 @@
 import React from 'react'
+import { Container ,Image, Info, Title, Button } from './styles'
 
-
-import { styled } from '@mui/icons-material'
-
-const Container = styled.div``
-
-const CategoryItem = () => {
+const CategoryItem = ({ item }) => {
   return (
     <Container>
-        
+        <Image src={item.img} />
+        <Info>
+          <Title>{item.title}</Title>
+          <Button>Shop Now</Button>
+        </Info>
     </Container>
   )
 }

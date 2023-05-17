@@ -1,14 +1,16 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-
-import categImg01 from '../../assets/images/category/'
+import { Container } from './styles'
+import categories from '../../assets/data/category'
+import CategoryItem from './CategoryItem'
 
 const Categories = () => {
   return (
     <Container>
-        <Row>
-            <Col></Col>
-        </Row>
+        {
+          categories.map(item => (
+            <CategoryItem item={item} />
+          ))
+        }
     </Container>
   )
 }
