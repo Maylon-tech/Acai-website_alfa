@@ -49,6 +49,16 @@ const popularProducts = [
         img: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Berries_Galore_Acai_Bowl_%2830276166867%29.jpg",
         title: "hhh",
     },
+    {
+        id: 11,
+        img: "https://www.cookwithmanali.com/wp-content/uploads/2021/04/Acai-Bowl.jpg",
+        title: "jjj",
+    },
+    {
+        id: 12,
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Berries_Galore_Acai_Bowl_%2830276166867%29.jpg",
+        title: "hhh",
+    },
     
 ]
 
