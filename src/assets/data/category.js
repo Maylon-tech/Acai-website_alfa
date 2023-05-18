@@ -1,4 +1,4 @@
-export const categories = [
+const categories = [
     {
         id: 1,
         img: "https://simple-veganista.com/wp-content/uploads/2021/04/acai-smoothie-6.jpg",
@@ -18,3 +18,6 @@ export const categories = [
     },
     
 ]
+
+export default categories
+
