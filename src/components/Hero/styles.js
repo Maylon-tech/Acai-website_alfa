@@ -5,6 +5,9 @@ export const Container = styled.div`
   height: 100vh;
   background-color: #fff;
   display: flex;
+  border: 3px solid red;
+  background: rgb(14,130,51);
+background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
 `
 export const ImageFloat = styled.div`
   flex: 1;
@@ -63,14 +66,19 @@ export const InfoContent = styled.div`
   flex: 1;
   padding: 2rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid #333;
 ` 
 
 export const Logo = styled.div``
 
 export const Title = styled.div``
 
-export const ButtonContent = styled.div``
+export const ButtonContent = styled.div`
+  border: 2px solid orange;
+`
 
 export const ButtonDelivery = styled.div``
 

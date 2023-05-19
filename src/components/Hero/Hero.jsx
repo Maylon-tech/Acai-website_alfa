@@ -38,13 +38,14 @@ const Hero = () => {
         <Logo>
           <img src={InfoLogo} alt="" />
         </Logo>
-        <Title></Title>
+        <Title>Subtitulo</Title>
         <ButtonContent>
+          <Title>Tipo de Pedidos</Title>
           <ButtonDelivery>
-
+            Entrega
           </ButtonDelivery>
           <ButtonMobile>
-
+            Mobile
           </ButtonMobile>
         </ButtonContent>
       </InfoContent>
