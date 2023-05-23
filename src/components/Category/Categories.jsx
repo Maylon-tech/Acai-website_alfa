@@ -1,16 +1,19 @@
 import React from 'react'
-import { Container } from './styles'
+import { Container, DefaultContainer, Title } from './CategoryStyles'
 import categories from '../../assets/data/category'
 import CategoryItem from './CategoryItem'
 
 const Categories = () => {
   return (
     <Container>
-        {
-          categories.map(item => (
-            <CategoryItem item={item} key={item.id} />
-          ))
-        }
+      <Title>Categoria do mes</Title>
+      <DefaultContainer>
+          {
+            categories.map(item => (
+              <CategoryItem item={item} key={item.id} />
+            ))
+          }
+      </DefaultContainer>
     </Container>
   )
 }

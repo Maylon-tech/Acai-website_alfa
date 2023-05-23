@@ -2,27 +2,27 @@ const popularProducts = [
     {
         id: 1,
         img: "https://simple-veganista.com/wp-content/uploads/2021/04/acai-smoothie-6.jpg",
-        title: "aaa",
+        title: "Acai glass",
     },
     {
         id: 2,
         img: "https://www.cookwithmanali.com/wp-content/uploads/2021/04/Acai-Bowl.jpg",
-        title: "bbb",
+        title: "Fruits Bown",
     },
     {
         id: 3,
         img: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Berries_Galore_Acai_Bowl_%2830276166867%29.jpg",
-        title: "ccc",
+        title: "Family Barry Bow",
     },
     {
         id: 4,
         img: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Berries_Galore_Acai_Bowl_%2830276166867%29.jpg",
-        title: "ddd",
+        title: "product 02",
     },
     {
         id: 5,
         img: "https://simple-veganista.com/wp-content/uploads/2021/04/acai-smoothie-6.jpg",
-        title: "eee",
+        title: "product 02 extra",
     },
     {
         id: 6,

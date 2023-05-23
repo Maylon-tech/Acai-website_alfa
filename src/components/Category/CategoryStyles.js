@@ -4,9 +4,25 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: rgb(14,130,51);
+    background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
 `
+
+//  Container Padrado  para todos os Componentes.
+export const DefaultContainer = styled.div`
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+`
+
+
 
 // Content Son from CategoriesItem.jsx
 export const Content = styled.div`
@@ -41,7 +57,13 @@ export const Title = styled.h1`
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-left: 4rem;
+`
+
+export const TitleChild = styled.h1`
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 `
 
 export const Button = styled.button`

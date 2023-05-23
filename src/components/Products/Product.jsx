@@ -1,20 +1,16 @@
 import React from 'react'
-import { Circle, Content, Icon, Image, Info } from './ProductStyle'
+import { Content, Icon, Image, Info, InfoTitle } from './ProductStyle'
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 
-const Product = ({ item }) => {
+const Product = ({ item, title }) => {
   return (
     <Content>
-        <Circle />
         <Image src={item.img} />
         <Info>
+            <InfoTitle>{item.title}</InfoTitle>
             <Icon>
-                <ShoppingCartOutlined />
-            </Icon>
-            <Icon>
-                <SearchOutlined />
-            </Icon>
-            <Icon>
+                <ShoppingCartOutlined />           
+                <SearchOutlined />            
                 <FavoriteBorderOutlined />
             </Icon>
         </Info>

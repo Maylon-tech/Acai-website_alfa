@@ -21,16 +21,16 @@ import InfoLogo from '../../assets/images/logo.png'
 const Hero = () => {
   return (
     <Container>
-
+      
       <ImageFloat>
         <ImageOne>
-          <img src={img1} alt="" />
+          <img src={img1} alt="img" />
         </ImageOne>
         <ImageTwo>
-          <img src={img2} alt="" />
+          <img src={img2} alt="img" />
         </ImageTwo>
         <ImageThree>
-          <img src={img3} alt="" />
+          <img src={img3} alt="img" />
         </ImageThree>
       </ImageFloat>
 
@@ -38,9 +38,9 @@ const Hero = () => {
         <Logo>
           <img src={InfoLogo} alt="" />
         </Logo>
-        <Title>Subtitulo</Title>
+        <Title>Novos Sabores toda semana!</Title>
+
         <ButtonContent>
-          <Title>Tipo de Pedidos</Title>
           <ButtonDelivery>
             Entrega
           </ButtonDelivery>

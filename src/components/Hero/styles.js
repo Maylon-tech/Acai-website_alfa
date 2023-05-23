@@ -3,24 +3,23 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #fff;
   display: flex;
-  border: 3px solid red;
   background: rgb(14,130,51);
-background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
+  background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
 `
+
 export const ImageFloat = styled.div`
-  flex: 1;
+  flex: 2;
   position: relative;
 `
 export const ImageOne = styled.div`
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 20px;
   background-color: orange;
   border-radius: 50%;
-  width: 230px;
-  height: 230px;
+  width: 330px;
+  height: 330px;
 
   > img {
     width: 100%;
@@ -35,8 +34,8 @@ export const ImageTwo = styled.div`
   transform: translateY(-50%);
   left: 30px;
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  width: 380px;
+  height: 380px;
 
   > img {
     width: 100%;
@@ -48,11 +47,11 @@ export const ImageTwo = styled.div`
 export const ImageThree = styled.div`
   position: absolute;
   right: 90px;
-  bottom: 40px;
+  bottom: -20px;
   background-color: green;
   border-radius: 50%;
-  width: 230px;
-  height: 230px;
+  width: 280px;
+  height: 280px;
 
   > img {
     width: 100%;
@@ -68,18 +67,53 @@ export const InfoContent = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  border: 2px solid #333;
+  justify-content: space-evenly;
 ` 
 
-export const Logo = styled.div``
+export const Logo = styled.div`
+  width: 380px;
+  height: 150px;
 
-export const Title = styled.div``
-
-export const ButtonContent = styled.div`
-  border: 2px solid orange;
+  > img {
+    width: 100%;
+  }
 `
 
-export const ButtonDelivery = styled.div``
+export const Title = styled.h1`
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+`
 
-export const ButtonMobile = styled.div``
+export const ButtonContent = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+`
+
+export const ButtonDelivery = styled.button`
+  width: 160px;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: rgb(120,39,144);
+  background: radial-gradient(circle, rgba(120,39,144,1) 7%, rgba(183,103,205,1) 49%, rgba(115,68,166,1) 93%);
+`
+
+export const ButtonMobile = styled.button`
+  width: 160px;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: rgb(120,39,144);
+  background: radial-gradient(circle, rgba(120,39,144,1) 7%, rgba(183,103,205,1) 49%, rgba(115,68,166,1) 93%);
+`
