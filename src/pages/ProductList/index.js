@@ -10,6 +10,7 @@ export const Title = styled.h1`
 export const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  border: 2px solid orange;
 `
 
 export const Filter = styled.div`

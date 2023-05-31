@@ -3,7 +3,8 @@ import { Container, Desc, FilterColor, FilterSize, FilterSizeOption, FilterTitle
 import Navbar from '../../components/Navbar/Navbar'
 import Announcement from '../../components/Announcement/Announcement'
 import Footer from '../../components/Footer/Footer'
-import { Filter, FilterContainer } from '../ProductList/styled'
+import { Filter, FilterContainer } from '../Single Page'
+import imageHero from '../../assets/images/heroImg2.jpg'
 
 const ProductSinglePage = () => {
   return (
@@ -13,7 +14,7 @@ const ProductSinglePage = () => {
 
         <Wrapper>
             <ImgContainer>
-                <Image  alt='image' />
+                <Image src={imageHero}  alt='imageHero' />
             </ImgContainer>
 
             <InfoContainer>
@@ -26,12 +27,14 @@ const ProductSinglePage = () => {
                 <Price> $ 30</Price>
 
                 <FilterContainer>
+
                     <Filter>
                         <FilterTitle>Color</FilterTitle>
                         <FilterColor color="black" />
                         <FilterColor color="darkblue" />
                         <FilterColor color="grey" />
                     </Filter>
+                    
                     <Filter>
                         <FilterTitle>Size</FilterTitle>
                         <FilterSize>
@@ -43,6 +46,16 @@ const ProductSinglePage = () => {
                     </Filter>
 
                 </FilterContainer>
+
+                <AddContainer>
+                    <AountContainer>
+                        <Remove />
+                        <Amount> 1 </Amount>
+                        <Add />
+                    </AountContainer>
+                    <Button> Add to Cart</Button>
+                </AddContainer>
+
 
             </InfoContainer>
         </Wrapper>

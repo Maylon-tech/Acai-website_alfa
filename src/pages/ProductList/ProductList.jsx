@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Filter, FilterContainer, FilterText, Option, Select, Title } from './styled'
+import { Container, Filter, FilterContainer, FilterText, Option, Select, Title } from '.'
 import Navbar from '../../components/Navbar/Navbar'
 import Announcement from '../../components/Announcement/Announcement'
 import Products from '../../components/Products/Products'
@@ -12,6 +12,7 @@ const ProductList = () => {
       <Announcement />
 
       <Title>Geladinho</Title>
+      
       <FilterContainer>
         <Filter>
           <FilterText Text>Filtar por Produtos:</FilterText>
