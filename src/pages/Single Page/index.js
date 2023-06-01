@@ -23,7 +23,6 @@ export const Image = styled.img`
 
 export const InfoContainer = styled.div`
   flex: 1;
-  border: 3px solid black;
   padding: 2rem;
 `
 
@@ -44,7 +43,6 @@ export const Price = styled.span`
 
 
 export const FilterContainer = styled.div`
-    border: 3px solid orange;
     width: 50%;
     margin: 30px 0;
     display: flex;
@@ -75,26 +73,59 @@ export const FilterSize = styled.select`
   padding: 0%.5rem;
 `
 
-
-
-export const FilterSizeOption = styled.option`
-
-`
+export const FilterSizeOption = styled.option``
 
 export const AddContainer = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `
 
 export const AmountContainer = styled.div`
-
+  display: flex;
+  align-items: center;
+  font-weight: 700;
 `
 
 export const Amount = styled.span`
-
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
 `
 
 export const Button = styled.button`
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
 
+  &:hover {
+    background-color: lightgreen;
+  }
+`
+
+export const Btn = styled.button`
+  font-size: 1.7rem;
+  color: #555;
+  padding: .2rem .4rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: lightgray;
+  }
 `

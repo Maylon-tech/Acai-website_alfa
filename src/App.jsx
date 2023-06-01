@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import GlobalStyle from './GlobalStyle'
 import ProductList from './pages/ProductList/ProductList'
 import ProductSinglePage from './pages/Single Page/ProductSinglePage'
+import Register from './pages/Register/Register'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <GlobalStyle />
       {/* <Home /> */}
       {/* <ProductList /> */}
-      <ProductSinglePage />
+      {/* <ProductSinglePage /> */}
+      <Register />
     </div>
   )
 }

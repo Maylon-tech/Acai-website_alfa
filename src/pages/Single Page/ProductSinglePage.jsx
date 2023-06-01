@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Desc, FilterColor, FilterSize, FilterSizeOption, FilterTitle, Image, ImgContainer, InfoContainer, Price, Title, Wrapper } from './index'
+import { AddContainer, Amount, AmountContainer, Btn, Button, Container, Desc, FilterColor, FilterSize, FilterSizeOption, FilterTitle, Image, ImgContainer, InfoContainer, Price, Title, Wrapper } from './index'
 import Navbar from '../../components/Navbar/Navbar'
 import Announcement from '../../components/Announcement/Announcement'
 import Footer from '../../components/Footer/Footer'
@@ -48,11 +48,11 @@ const ProductSinglePage = () => {
                 </FilterContainer>
 
                 <AddContainer>
-                    <AountContainer>
-                        <Remove />
+                    <AmountContainer>
+                        <Btn> - </Btn>
                         <Amount> 1 </Amount>
-                        <Add />
-                    </AountContainer>
+                        <Btn> + </Btn>
+                    </AmountContainer>
                     <Button> Add to Cart</Button>
                 </AddContainer>
 
