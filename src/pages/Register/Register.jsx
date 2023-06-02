@@ -1,5 +1,5 @@
 import React from 'react'
-import { Agreement, Container, Form, Input, Title, Wrapper } from './index.js'
+import { Agreement, Button, Container, Form, Input, Title, Wrapper } from './index.js'
 
 const Register = () => {
   return (

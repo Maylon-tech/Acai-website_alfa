@@ -4,6 +4,8 @@ import GlobalStyle from './GlobalStyle'
 import ProductList from './pages/ProductList/ProductList'
 import ProductSinglePage from './pages/Single Page/ProductSinglePage'
 import Register from './pages/Register/Register'
+import Login from './pages/Login/Login'
+import Cart from './pages/Cart/Cart'
 
 const App = () => {
   return (
@@ -12,7 +14,9 @@ const App = () => {
       {/* <Home /> */}
       {/* <ProductList /> */}
       {/* <ProductSinglePage /> */}
-      <Register />
+      {/* <Register /> */}
+      {/* <Login /> */}
+      <Cart />
     </div>
   )
 }
