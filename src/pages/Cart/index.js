@@ -47,30 +47,94 @@ export const Info = styled.div`
     flex: 3;
 `
 
+export const Product = styled.div`
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid orange;
+    margin: 1.5rem;
+`
+
+export const ProductDetails = styled.div`
+    flex: 2;
+    display: flex;
+`
+
+export const PriceDetails = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid purple;
+`
+
+export const Image = styled.img`
+    width: 200px;  
+    height: 150px;
+    object-fit: cover;  
+`
+
+export const Details = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid white;
+`
+
+export const ProductName = styled.span`
+    
+`
+
+export const ProductId = styled.span`
+    
+`
+
+export const ProductColor = styled.span`
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: ${(props) => props.color};
+`
+
+export const ProductSize = styled.span`
+    
+`
+
+export const ProductAmountContainer = styled.span`
+    display: flex;
+    align-items: center;
+`
+export const ProductAmount = styled.span`
+    font-size: 24px;
+    margin: 5px;
+`
+
+export const ProductPrice= styled.span`
+    font-size: 30px;
+    font-weight: 200;
+`
+
 export const Summary = styled.div`
     flex: 1;
 `
 
-export const Product = styled.div`
+export const SumTitle = styled.h1`
     
 `
 
-export const ProductDetails = styled.div`
+export const SumItem = styled.div`
     
 `
 
-export const PriceDetails = styled.div`
+export const SumItemText = styled.span`
     
 `
 
-export const Image = styled.img`
+export const SumItemPrice = styled.span`
     
 `
 
-export const Details = styled.p`
-    
-`
-
-export const ProductName = styled.h1`
+export const Button = styled.button`
     
 `
