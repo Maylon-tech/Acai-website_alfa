@@ -1,5 +1,5 @@
 import React from 'react'
-import { Content ,Image, Info, Title, Button, TitleChild } from './CategoryStyles'
+import { Content ,Image, Info, Title, Button, TitleChild } from '.'
 
 const CategoryItem = ({ item }) => {
 

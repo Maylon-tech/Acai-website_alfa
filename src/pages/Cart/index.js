@@ -117,14 +117,22 @@ export const ProductPrice= styled.span`
 
 export const Summary = styled.div`
     flex: 1;
+    border: 0.5px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50vh;
 `
 
 export const SumTitle = styled.h1`
-    
+    font-weight: 200;
 `
 
 export const SumItem = styled.div`
-    
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: ${props => props.type === "total" && "500"};
+    font-size: ${props => props.type === "total" && "24px"};
 `
 
 export const SumItemText = styled.span`
@@ -136,5 +144,12 @@ export const SumItemPrice = styled.span`
 `
 
 export const Button = styled.button`
-    
+    width: 100%;
+    padding: 10px;
+    background-color: #111;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
 `

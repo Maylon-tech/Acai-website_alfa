@@ -11,12 +11,12 @@ const App = () => {
   return (
     <div>
       <GlobalStyle />
-      {/* <Home /> */}
+      <Home /> 
       {/* <ProductList /> */}
       {/* <ProductSinglePage /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      <Cart />
+      {/* <Cart /> */}
     </div>
   )
 }

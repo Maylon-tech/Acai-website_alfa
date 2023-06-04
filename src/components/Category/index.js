@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 // Container father from Categories.jsx
 export const Container = styled.div`
@@ -9,6 +10,7 @@ export const Container = styled.div`
     flex-direction: column;
     background: rgb(14,130,51);
     background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
+    ${mobile({  width: '50px', })}
 `
 
 //  Container Padrado  para todos os Componentes.

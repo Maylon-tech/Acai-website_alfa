@@ -11,7 +11,7 @@ import {
   ButtonContent,
   ButtonDelivery,
   ButtonMobile
-} from './styles'
+} from '.'
 
 import img1 from '../../assets/images/heroImg1.jpg'
 import img2 from '../../assets/images/heroImg2.jpg'
