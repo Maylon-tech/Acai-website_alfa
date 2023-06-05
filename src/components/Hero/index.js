@@ -4,8 +4,9 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  background: rgb(14,130,51);
-  background: linear-gradient(94deg, rgba(14,130,51,1) 7%, rgba(192,237,220,1) 49%, rgba(15,134,71,1) 94%);
+
+  background: rgb(204,160,232);
+  background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
 `
 
 export const ImageFloat = styled.div`

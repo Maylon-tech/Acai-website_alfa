@@ -13,6 +13,10 @@ import {
   Input,
   Center,
   Logo,
+  Right,
+  MenuItem,
+  LangBox,
+
 } from './index'
 
 
@@ -21,12 +25,21 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>ENG</Language>
+          <Language>
+            ENG
+            <LangBox>
+              <span>Port</span>
+              <span>Spanish</span>
+              <span>Japanese</span>
+              <span>Chinese</span>
+              <span>Taglog</span>
+            </LangBox>
+          </Language>
 
-          <SearchContainer>
+          {/* <SearchContainer>
             <Input placeholder='Search...' />
            <SearchIcon style={{ color: "gray", fontSize:16}} /> 
-          </SearchContainer>
+          </SearchContainer> */}
 
         </Left>
 

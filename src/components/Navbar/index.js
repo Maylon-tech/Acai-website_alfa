@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 import { mobile } from '../../responsive'
 
-const Container = styled.div`
+export const Container = styled.div`
   height: 60px;
-  background-color: #eee;
+  background: rgb(204,160,232);
+  background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
   ${mobile({ 
     height: '50px',  })}
 `
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -16,13 +17,37 @@ const Wrapper = styled.div`
   ${mobile({ 
     padding: '10px 0', })}
 `
-const Language = styled.span`
+export const Language = styled.span`
   cursor: pointer;
   font-size: 14px;
+  position: relative;
+
   ${mobile({ 
     display: 'none', })}
 `
-const SearchContainer = styled.div`
+
+export const LangBox = styled.div`
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 100px;
+  border-bottom: 1px solid lightgray;
+  background-color: #eee;
+  padding: .6rem;
+  display: flex;
+  gap:.5rem;
+  flex-direction: column;
+
+  display: none;
+
+  > span {
+    color: #333;
+    cursor: pointer;
+  }
+`
+
+
+export const SearchContainer = styled.div`
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
@@ -33,30 +58,30 @@ const SearchContainer = styled.div`
 `
 
 // Navbar - Left side
-const Left = styled.div`
+export const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
 `
-const Input = styled.input`
+export const Input = styled.input`
   border: none;
   outline: none;
   ${mobile({  width: '50px', })}
 `
 
 // Navbar - Center
-const Center = styled.div`
+export const Center = styled.div`
   flex: 1;
   text-align: center;
 `
 
-const Logo = styled.h1`
+export const Logo = styled.h1`
   font-weight: bold;
   ${mobile({  fontSize: '20px', })}
 `
 
 // Navbar - Right
-const Right = styled.div`
+export const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -64,7 +89,7 @@ const Right = styled.div`
   ${mobile({  flex: 2, justifyContent: 'center', })}
 `
 
-const MenuItem = styled.div`
+export const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
