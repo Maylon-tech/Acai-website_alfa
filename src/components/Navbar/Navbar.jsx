@@ -3,7 +3,7 @@ import React from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import Badge from '@mui/material/Badge'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
+import { Link, useNavigate } from 'react-router-dom'
 import {
   Container,
   Wrapper,
@@ -21,6 +21,9 @@ import {
 
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
   return (
     <Container>
       <Wrapper>
@@ -48,12 +51,16 @@ const Navbar = () => {
         </Center>
 
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem onClick={() => navigate("/register")}>REGISTER</MenuItem>
+          <MenuItem onClick={() => navigate("/login")}>SIGN IN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="success">
-              <ShoppingCartOutlinedIcon color="action" />
-            </Badge>
+
+          <Link to="/cart">
+              <Badge badgeContent={4} color="success">
+                <ShoppingCartOutlinedIcon color="action" />
+              </Badge>
+          </Link>
+
           </MenuItem>
         </Right>
 

@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import Home from './pages/Home'
 import GlobalStyle from './GlobalStyle'
 import ProductList from './pages/ProductList/ProductList'
@@ -9,15 +11,18 @@ import Cart from './pages/Cart/Cart'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <GlobalStyle />
-      <Home /> 
-      {/* <ProductList /> */}
-      {/* <ProductSinglePage /> */}
-      {/* <Register /> */}
-      {/* <Login /> */}
-      {/* <Cart /> */}
-    </div>
+      <Routes>
+        
+        <Route path="/login" element={ <Login />  } />
+        <Route path="/register" element={ <Register /> } /> 
+        <Route path="/cart" element={ <Cart /> } />
+        <Route path="/" element={ <Home /> } /> 
+        {/* <ProductList /> */}
+        {/* <ProductSinglePage /> */}        
+      </Routes>
+    </Router>
   )
 }
 
