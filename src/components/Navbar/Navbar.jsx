@@ -18,7 +18,7 @@ import {
   LangBox,
 
 } from './index'
-
+import logo from '../../assets/images/LogoFruit.png'
 
 const Navbar = () => {
 
@@ -27,7 +27,11 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
+
         <Left>
+          <Logo>
+            <img src={logo} alt="" />
+          </Logo>
           <Language>
             ENG
             <LangBox>
@@ -46,9 +50,7 @@ const Navbar = () => {
 
         </Left>
 
-        <Center>
-          <Logo>AcaiShop</Logo>
-        </Center>
+        
 
         <Right>
           <MenuItem onClick={() => navigate("/register")}>REGISTER</MenuItem>

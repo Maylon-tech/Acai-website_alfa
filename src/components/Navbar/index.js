@@ -3,8 +3,7 @@ import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   height: 60px;
-  background: rgb(204,160,232);
-  background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
+  background: lightgray;
   ${mobile({ 
     height: '50px',  })}
 `
@@ -21,6 +20,9 @@ export const Language = styled.span`
   cursor: pointer;
   font-size: 14px;
   position: relative;
+  border: 2px solid lightgray;
+  padding: .2rem .8rem;
+  border-radius: 3px;
 
   ${mobile({ 
     display: 'none', })}
@@ -78,6 +80,14 @@ export const Center = styled.div`
 export const Logo = styled.h1`
   font-weight: bold;
   ${mobile({  fontSize: '20px', })}
+  width: 60px;
+  height: 60px;
+
+  >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `
 
 // Navbar - Right
