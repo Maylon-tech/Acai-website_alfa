@@ -16,6 +16,8 @@ import {
   Right,
   MenuItem,
   LangBox,
+  Register,
+  Login,
 
 } from './index'
 import logo from '../../assets/images/LogoFruit.png'
@@ -53,16 +55,21 @@ const Navbar = () => {
         
 
         <Right>
-          <MenuItem onClick={() => navigate("/register")}>REGISTER</MenuItem>
-          <MenuItem onClick={() => navigate("/login")}>SIGN IN</MenuItem>
+
           <MenuItem>
+            <Register onClick={() => navigate("/register")}>REGISTER</Register>
+          </MenuItem>
 
-          <Link to="/cart">
-              <Badge badgeContent={4} color="success">
-                <ShoppingCartOutlinedIcon color="action" />
-              </Badge>
-          </Link>
+          <MenuItem>
+            <Login onClick={() => navigate("/login")}>SIGN IN</Login>
+          </MenuItem>
 
+          <MenuItem>
+            <Link to="/cart">
+                <Badge badgeContent={4} color="success">
+                  <ShoppingCartOutlinedIcon color="action" />
+                </Badge>
+            </Link>
           </MenuItem>
         </Right>
 

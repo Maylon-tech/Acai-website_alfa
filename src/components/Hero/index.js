@@ -4,62 +4,26 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-
-  background: rgb(204,160,232);
-  background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
+  background-color: #eee;
+  /* background: rgb(204,160,232);
+  background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%); */
 `
 
 export const ImageFloat = styled.div`
-  flex: 2;
+  flex: 1;
   position: relative;
 `
+
 export const ImageOne = styled.div`
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: orange;
-  border-radius: 50%;
-  width: 330px;
-  height: 330px;
+  width: 500px;
+  height: 500px;
 
   > img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     object-fit: cover;
   }
-`  
-export const ImageTwo = styled.div`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 30px;
-  border-radius: 50%;
-  width: 380px;
-  height: 380px;
 
-  > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-` 
-export const ImageThree = styled.div`
-  position: absolute;
-  right: 90px;
-  bottom: -20px;
-  background-color: green;
-  border-radius: 50%;
-  width: 280px;
-  height: 280px;
-
-  > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
 `
 
 export const InfoContent = styled.div`

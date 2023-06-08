@@ -3,13 +3,14 @@ import { mobile } from '../../responsive'
 
 export const Container = styled.div`
   height: 60px;
-  background: lightgray;
+  background: #eee;
   ${mobile({ 
     height: '50px',  })}
 `
 
 export const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 0 2rem;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +24,7 @@ export const Language = styled.span`
   border: 2px solid lightgray;
   padding: .2rem .8rem;
   border-radius: 3px;
+  margin-left: 1.5rem;
 
   ${mobile({ 
     display: 'none', })}
@@ -105,3 +107,11 @@ export const MenuItem = styled.div`
   margin-left: 25px;
   ${mobile({  fontSize: '12px', marginLeft: '10px' })}
 `
+
+export const Register = styled.div``
+
+
+export const Login = styled.div``
+
+
+export const MenuIte = styled.div``

@@ -13,9 +13,8 @@ import {
   ButtonMobile
 } from '.'
 
-import img1 from '../../assets/images/heroImg1.jpg'
-import img2 from '../../assets/images/heroImg2.jpg'
-import img3 from '../../assets/images/heroImg3.jpeg'
+import heroImg from '../../assets/images/Hero.jpg'
+
 import InfoLogo from '../../assets/images/logo.png'
 
 const Hero = () => {
@@ -24,14 +23,8 @@ const Hero = () => {
       
       <ImageFloat>
         <ImageOne>
-          <img src={img1} alt="img" />
-        </ImageOne>
-        <ImageTwo>
-          <img src={img2} alt="img" />
-        </ImageTwo>
-        <ImageThree>
-          <img src={img3} alt="img" />
-        </ImageThree>
+          <img src={heroImg} alt="img" />
+        </ImageOne>        
       </ImageFloat>
 
       <InfoContent>
