@@ -8,5 +8,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    
+    :root {
+        --logo-font: 'Patua One', cursive;
+    }
 `

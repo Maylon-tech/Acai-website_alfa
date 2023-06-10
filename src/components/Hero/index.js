@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   background-color: #eee;
   /* background: rgb(204,160,232);
@@ -12,12 +14,15 @@ export const Container = styled.div`
 export const ImageFloat = styled.div`
   flex: 1;
   position: relative;
+  display: grid;
+  place-items: center;
+
 `
 
 export const ImageOne = styled.div`
-  width: 500px;
-  height: 500px;
-
+  width: 300px;
+  height: 300px;
+  
   > img {
     width: 100%;
     height: 100%;

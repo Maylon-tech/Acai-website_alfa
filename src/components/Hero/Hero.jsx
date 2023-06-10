@@ -13,7 +13,7 @@ import {
   ButtonMobile
 } from '.'
 
-import heroImg from '../../assets/images/Hero.jpg'
+import heroImg from '../../assets/images/Hero-removebg-preview.png'
 
 import InfoLogo from '../../assets/images/logo.png'
 
@@ -29,7 +29,7 @@ const Hero = () => {
 
       <InfoContent>
         <Logo>
-          <img src={InfoLogo} alt="" />
+          <h1>Amazon</h1>
         </Logo>
         <Title>Novos Sabores toda semana!</Title>
 

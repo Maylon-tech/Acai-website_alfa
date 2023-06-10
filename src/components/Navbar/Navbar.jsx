@@ -18,6 +18,8 @@ import {
   LangBox,
   Register,
   Login,
+  LogoText,
+  Image,
 
 } from './index'
 import logo from '../../assets/images/LogoFruit.png'
@@ -32,9 +34,10 @@ const Navbar = () => {
 
         <Left>
           <Logo>
-            <img src={logo} alt="" />
+            <Image src={logo} />
+            <LogoText>Amazon</LogoText>
           </Logo>
-          <Language>
+          {/* <Language>
             ENG
             <LangBox>
               <span>Port</span>
@@ -43,7 +46,7 @@ const Navbar = () => {
               <span>Chinese</span>
               <span>Taglog</span>
             </LangBox>
-          </Language>
+          </Language> */}
 
           {/* <SearchContainer>
             <Input placeholder='Search...' />
@@ -67,7 +70,7 @@ const Navbar = () => {
           <MenuItem>
             <Link to="/cart">
                 <Badge badgeContent={4} color="success">
-                  <ShoppingCartOutlinedIcon color="action" />
+                  <ShoppingCartOutlinedIcon size={70} />
                 </Badge>
             </Link>
           </MenuItem>
