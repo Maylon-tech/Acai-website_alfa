@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { mobile } from '../../responsive'
 
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 1480px;
   margin: 0 auto;
   height: 100px;
   background: #C8AFD4;
@@ -14,10 +14,13 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   padding: 0 2rem;
   height: 100%;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
 
   ${mobile({ 
     padding: '10px 0', })}
@@ -26,19 +29,19 @@ export const Wrapper = styled.div`
 export const Logo = styled.h1`
   font-weight: bold;
   display: flex;
-  gap: 2rem;
-
+  gap: .5rem;
+  align-items: center;
   ${mobile({  fontSize: '20px', })}
  
 `
 export const Image = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 `
 
 export const LogoText = styled.h1`
   color: #642667;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: var(--logo-font);
   letter-spacing: 2px;
 `
@@ -115,12 +118,19 @@ export const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1rem;
+  padding: 1rem;
   ${mobile({  flex: 2, justifyContent: 'center', })}
 `
 
 export const MenuItem = styled.div`
+
+  a {
+    padding: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   cursor: pointer;
 

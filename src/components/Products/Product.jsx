@@ -1,11 +1,13 @@
 import React from 'react'
-import { Content, Icon, Image, Info, InfoTitle } from './ProductStyle'
+import { Content, Icon, Image, ImageContainer, Info, InfoTitle } from './ProductStyle'
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 
 const Product = ({ item, title }) => {
   return (
     <Content>
-        <Image src={item.img} />
+        <ImageContainer>
+          <Image src={item.img} />
+        </ImageContainer>
         <Info>
             <InfoTitle>{item.title}</InfoTitle>
             <Icon>

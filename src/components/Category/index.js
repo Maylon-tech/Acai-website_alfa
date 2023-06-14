@@ -5,34 +5,29 @@ import { mobile } from "../../responsive";
 export const Container = styled.div`
     display: flex;
     gap: 1.5rem;
+    max-width: 980px;
+    margin: 0 auto;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    background: rgb(204,160,232);
-    background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
+    background-color: #eee;
+
     ${mobile({  width: '50px', })}
 `
 
 //  Container Padrado  para todos os Componentes.
 export const DefaultContainer = styled.div`
-    max-width: 1180px;
-    margin: 0 auto;
     padding: 1rem;
-
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
 `
 
-
-
 // Content Son from CategoriesItem.jsx
 export const Content = styled.div`
     flex: 1;
-    height: 70vh;
-    margin: 1rem 0;
+    height: 250px;
     position: relative;
-    
 `
 export const Image = styled.img`
     width: 100%;
@@ -60,6 +55,7 @@ export const Title = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-left: 4rem;
+    color: #222;
 `
 
 export const TitleChild = styled.h1`
@@ -77,4 +73,5 @@ export const Button = styled.button`
     font-size: 1.2rem;
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 1.2rem;
 `

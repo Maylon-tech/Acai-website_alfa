@@ -6,7 +6,7 @@ import CategoryItem from './CategoryItem'
 const Categories = () => {
   return (
     <Container>
-      <Title>Categoria do mes</Title>
+      <Title>Novidades da Semana</Title>
       <DefaultContainer>
           {
             categories.map(item => (

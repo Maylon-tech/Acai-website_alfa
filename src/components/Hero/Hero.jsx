@@ -35,10 +35,10 @@ const Hero = () => {
 
         <ButtonContent>
           <ButtonDelivery>
-            Entrega
+            Produtos
           </ButtonDelivery>
           <ButtonMobile>
-            Mobile
+            Delivery
           </ButtonMobile>
         </ButtonContent>
       </InfoContent>

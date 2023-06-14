@@ -1,5 +1,5 @@
 import React from 'react'
-import { Content ,Image, Info, Title, Button, TitleChild } from '.'
+import { Content ,Image, Info, Button, TitleChild } from '.'
 
 const CategoryItem = ({ item }) => {
 
@@ -8,7 +8,7 @@ const CategoryItem = ({ item }) => {
         <Image src={item.img} />
         <Info>
           <TitleChild>{item.title}</TitleChild>
-          <Button>Shop Now</Button>
+          <Button>Veja o Menu</Button>
         </Info>
     </Content>
   )

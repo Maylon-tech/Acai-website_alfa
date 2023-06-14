@@ -7,9 +7,9 @@ const Products = () => {
   return (
     <Container>
 
+      <Title>Produtos</Title>
       <DefaultContainer>
 
-        <Title>Produto e Novidades</Title>
 
           {
               popularProducts.map(item => (

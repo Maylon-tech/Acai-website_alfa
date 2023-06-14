@@ -1,44 +1,33 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`    
-    /* max-width: 1200px;
-    margin: 3rem auto; */
+    max-width: 980px;
+    margin: 0 auto; 
     padding-top: 3.5rem;
     position: relative;
-    background: rgb(204,160,232);
-    background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%);
+    background-color: #eee;
 `
 
 //  Container Padrado  para todos os Componentes.
-export const DefaultContainer = styled.div`
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 1rem;
+export const Title = styled.h1`
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 1rem 3rem;
+`
 
+export const DefaultContainer = styled.div`
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
 `
 
-
-export const Title = styled.h1`
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-`
-
 // Product Card
 
 export const Content = styled.div`
-    flex: 1;
-    margin: 5px;
-    min-width: 220px;
-    height: 300px;
-    background-color: rgba(250, 250, 250, .9);
+    margin: 0 auto;
+    background-color: rgba(250, 250, 250, .6);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -47,11 +36,15 @@ export const Content = styled.div`
     border-radius: 5px;
 `
 
+export const ImageContainer = styled.div`
+    width: 200px;
+    height: 200px;
+`
+
 export const Image = styled.img`
     width: 100%;
-    height: 230px;
+    height: 100%;
     object-fit: cover;
-
 `
 
 export const Info = styled.div` 
@@ -60,6 +53,7 @@ export const Info = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     margin-top: 1rem;
     /* background-color: rgba(0,0,0,0.6); */
 `
