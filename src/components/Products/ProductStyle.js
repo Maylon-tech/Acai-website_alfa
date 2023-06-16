@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`    
-    max-width: 980px;
+    max-width: 1300px;
     margin: 0 auto; 
     padding-top: 3.5rem;
     position: relative;
@@ -75,5 +75,13 @@ export const Icon = styled.div`
     font-size: 1.2rem;
     flex: 1;
     padding: .5rem;
-    cursor: pointer;
+    width: 70%;
+
+    > svg {
+        cursor: pointer;
+    }
+
+    > svg:hover {
+        color: #845EC2;
+    }
 `

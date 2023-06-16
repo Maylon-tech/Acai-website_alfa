@@ -5,7 +5,7 @@ import { mobile } from "../../responsive";
 export const Container = styled.div`
     display: flex;
     gap: 1.5rem;
-    max-width: 980px;
+    max-width: 1300px;
     margin: 0 auto;
     padding-top: 2rem;
     display: flex;
