@@ -25,7 +25,7 @@ SumItemPrice,
 Button
 } from './index'
 import Navbar from '../../components/Navbar/Navbar'
-import Announcement from '../../components/Announcement/Announcement'
+// import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 
 const Cart = () => {

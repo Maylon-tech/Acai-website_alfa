@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Filter, FilterContainer, FilterText, Option, Select, Title } from '.'
 import Navbar from '../../components/Navbar/Navbar'
-import Announcement from '../../components/Announcement/Announcement'
+// import Banner from '../../components/Banner/Banner'
 import Products from '../../components/Products/Products'
 import Footer from '../../components/Footer/Footer'
 
@@ -9,7 +9,7 @@ const ProductList = () => {
   return (
     <Container>
       <Navbar />
-      <Announcement />
+      {/* <Announcement /> */}
 
       <Title>Geladinho</Title>
       

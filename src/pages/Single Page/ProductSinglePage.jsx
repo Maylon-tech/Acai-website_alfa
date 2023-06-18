@@ -1,7 +1,7 @@
 import React from 'react'
 import { AddContainer, Amount, AmountContainer, Btn, Button, Container, Desc, FilterColor, FilterSize, FilterSizeOption, FilterTitle, Image, ImgContainer, InfoContainer, Price, Title, Wrapper } from './index'
 import Navbar from '../../components/Navbar/Navbar'
-import Announcement from '../../components/Announcement/Announcement'
+// import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import { Filter, FilterContainer } from '../Single Page'
 import imageHero from '../../assets/images/heroImg2.jpg'
@@ -10,7 +10,7 @@ const ProductSinglePage = () => {
   return (
     <Container>
         <Navbar />
-        <Announcement />
+        {/* <Banner /> */}
 
         <Wrapper>
             <ImgContainer>

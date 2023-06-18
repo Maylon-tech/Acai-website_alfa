@@ -3,8 +3,6 @@ import {
   Container,
   ImageFloat,
   ImageOne,
-  ImageTwo,
-  ImageThree,
   InfoContent,
   Logo,
   Title,
@@ -14,8 +12,6 @@ import {
 } from '.'
 
 import heroImg from '../../assets/images/Hero-removebg-preview.png'
-
-import InfoLogo from '../../assets/images/logo.png'
 
 const Hero = () => {
   return (
