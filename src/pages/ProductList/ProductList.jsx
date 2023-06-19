@@ -1,17 +1,17 @@
 import React from 'react'
 import { Container, Filter, FilterContainer, FilterText, Option, Select, Title } from '.'
 import Navbar from '../../components/Navbar/Navbar'
-// import Banner from '../../components/Banner/Banner'
+import Banner from '../../components/Banner/Banner'
 import Products from '../../components/Products/Products'
 import Footer from '../../components/Footer/Footer'
+
+import BannerImg from '../../assets/images/acai banner.jpeg'
 
 const ProductList = () => {
   return (
     <Container>
       <Navbar />
-      {/* <Announcement /> */}
-
-      <Title>Geladinho</Title>
+      <Banner img={BannerImg} />
       
       <FilterContainer>
         <Filter>
@@ -41,9 +41,9 @@ const ProductList = () => {
             <Option>
               Novidades
             </Option>
-            <Option>Bonus Weekend</Option>
-            <Option>Night Special</Option>
-            <Option>Descount cupon</Option>
+            <Option>Pacote Congelado</Option>
+            <Option>Grade de Acai Juice</Option>
+            <Option>Combo de Acai com Salgados</Option>
           </Select>
         </Filter>
       </FilterContainer>

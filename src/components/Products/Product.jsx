@@ -1,8 +1,17 @@
-import React from 'react'
-import { Content, Icon, Image, ImageContainer, Info, InfoTitle } from './ProductStyle'
+import React, { useState } from 'react'
+import { Content, Icon, Image, ImageContainer, Info, InfoTitle } from '.'
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 
 const Product = ({ item, title }) => {
+  const [heart, setHeart] = useState(false)
+
+  const handleActive = () => {
+    setHeart(heart)
+  }
+
+
+
+
   return (
     <Content>
         <ImageContainer>
@@ -13,7 +22,10 @@ const Product = ({ item, title }) => {
             <Icon>
                 <ShoppingCartOutlined />           
                 <SearchOutlined />            
-                <FavoriteBorderOutlined />
+                <FavoriteBorderOutlined 
+                  
+                  onClick={() => handleActive(alert("OK"))} 
+                />
             </Icon>
         </Info>
     </Content>

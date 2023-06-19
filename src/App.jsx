@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <GlobalStyle />
       <Routes>
-        
+        <Route path="/ProductList" element={ <ProductList /> } />
         <Route path="/login" element={ <Login />  } />
         <Route path="/register" element={ <Register /> } /> 
         <Route path="/cart" element={ <Cart /> } />

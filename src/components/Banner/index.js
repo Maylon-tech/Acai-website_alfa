@@ -5,7 +5,6 @@ export const Container = styled.div`
   margin: 0 auto;
   height: 400px;
   width: 100%;
-  border: 2px solid red;
   /* font-size: 14px;
   color: white;
   display: flex;

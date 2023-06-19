@@ -33,10 +33,14 @@ const Navbar = () => {
       <Wrapper>
 
         <Left>
-          <Logo>
-            <Image src={logo} />
-            <LogoText>Amazon</LogoText>
-          </Logo>
+
+          <Link to="/">
+            <Logo>
+              <Image src={logo} />
+              <LogoText>Amazon</LogoText>
+            </Logo>
+          </Link>
+          
           {/* <Language>
             ENG
             <LangBox>

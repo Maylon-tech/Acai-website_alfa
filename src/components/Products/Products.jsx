@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, DefaultContainer, Title } from './ProductStyle'
+import { Container, DefaultContainer, Title } from '.'
 import popularProducts from '../../assets/data/popularPro'
 import Product from './Product'
 
@@ -7,7 +7,8 @@ const Products = () => {
   return (
     <Container>
 
-      <Title>Produtos</Title>
+      <Title>Catalogo de Produtos</Title>
+      
       <DefaultContainer>
 
 

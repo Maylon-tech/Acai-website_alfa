@@ -96,6 +96,12 @@ export const Left = styled.div`
   display: flex;
   align-items: center;
   padding: 1.5rem;
+
+
+
+  a {
+    text-decoration: none;
+  }
 `
 // export const Input = styled.input`
 //   border: none;

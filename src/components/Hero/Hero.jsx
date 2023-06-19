@@ -11,32 +11,31 @@ import {
   ButtonMobile
 } from '.'
 
-import heroImg from '../../assets/images/Hero-removebg-preview.png'
+import heroImg from '../../assets/images/Acai_logo_hero-removebg-preview.png'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+
+  const navigate = useNavigate()
+
   return (
     <Container>
-      
-      <ImageFloat>
-        <ImageOne>
-          <img src={heroImg} alt="img" />
-        </ImageOne>        
-      </ImageFloat>
-
       <InfoContent>
         <Logo>
-          <h1>Amazon</h1>
+          <img src={heroImg} alt="img" />
         </Logo>
-        <Title>Novos Sabores toda semana!</Title>
+
+        <Title>Acai Restaurant!</Title>
 
         <ButtonContent>
-          <ButtonDelivery>
+          <ButtonDelivery onClick={() => navigate("/ProductList")}>
             Produtos
           </ButtonDelivery>
           <ButtonMobile>
             Delivery
           </ButtonMobile>
         </ButtonContent>
+
       </InfoContent>
 
     </Container>

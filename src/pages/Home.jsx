@@ -1,6 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+
 import BannerImg from '../assets/images/acai banner 2.jpg'
+
+import Navbar from '../components/Navbar/Navbar'
 import Banner from '../components/Banner/Banner'
 import Hero from '../components/Hero/Hero'
 import Categories from '../components/Category/Categories'

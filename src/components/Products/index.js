@@ -11,8 +11,12 @@ export const Container = styled.div`
 //  Container Padrado  para todos os Componentes.
 export const Title = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
     margin: 1rem 3rem;
+    text-align: center;
+
 `
 
 export const DefaultContainer = styled.div`
@@ -79,6 +83,7 @@ export const Icon = styled.div`
 
     > svg {
         cursor: pointer;
+        
     }
 
     > svg:hover {
