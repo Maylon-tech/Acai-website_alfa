@@ -8,6 +8,7 @@ import ProductSinglePage from './pages/Single Page/ProductSinglePage'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import Cart from './pages/Cart/Cart'
+import Sorvetes from './pages/NewsFeatures/sorvetes/Sorvetes'
 
 const App = () => {
   return (
@@ -18,6 +19,11 @@ const App = () => {
         <Route path="/login" element={ <Login />  } />
         <Route path="/register" element={ <Register /> } /> 
         <Route path="/cart" element={ <Cart /> } />
+
+        <Route path="/sorvetes/:id" element={ <Sorvetes /> } />
+        <Route path="/sucos" />
+        <Route path="/tijelas" />
+
         <Route path="/" element={ <Home /> } /> 
         {/* <ProductList /> */}
         {/* <ProductSinglePage /> */}        
