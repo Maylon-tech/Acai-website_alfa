@@ -2,23 +2,22 @@ import React from 'react'
 
 import BannerImg from '../assets/images/acai banner 2.jpg'
 
-import Navbar from '../components/Navbar/Navbar'
 import Banner from '../components/Banner/Banner'
 import Hero from '../components/Hero/Hero'
 import Categories from '../components/Category/Categories'
 import Products from '../components/Products/Products'
-import Footer from '../components/Footer/Footer'
+import TemplateDefault from '../components/TemplateDefault'
 
 const Home = () => {
   return (
-    <div>
-        <Navbar />
+    <TemplateDefault>
+        
         <Hero />
         <Categories />
         <Banner img={BannerImg} /> 
         <Products />
-        <Footer />
-    </div>
+        
+    </TemplateDefault>
   )
 }
 

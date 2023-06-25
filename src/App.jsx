@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import GlobalStyle from './GlobalStyle'
 import ProductList from './pages/ProductList/ProductList'
-import ProductSinglePage from './pages/Single Page/ProductSinglePage'
+import SingleCategory from './pages/CategoryItems/SingleCategory'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import Cart from './pages/Cart/Cart'
-import Sorvetes from './pages/NewsFeatures/sorvetes/Sorvetes'
+import Sorvetes from './pages/CategoryItems/SingleCategory'
 
 const App = () => {
   return (
@@ -20,9 +20,7 @@ const App = () => {
         <Route path="/register" element={ <Register /> } /> 
         <Route path="/cart" element={ <Cart /> } />
 
-        <Route path="/sorvetes/:id" element={ <Sorvetes /> } />
-        <Route path="/sucos" />
-        <Route path="/tijelas" />
+        <Route path="/singleItem/:id" element={ <SingleCategory /> } />
 
         <Route path="/" element={ <Home /> } /> 
         {/* <ProductList /> */}
