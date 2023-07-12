@@ -11,7 +11,7 @@ import {
 } from './index'
 import categories from '../../assets/data/category'
 
-const Sorvetes = () => {
+const SingleCategory = () => {
     const {id} = useParams()
     const sorvetes = categories.find(item => item.id === parseInt(id))
     const { img, title } = sorvetes
@@ -38,5 +38,5 @@ const Sorvetes = () => {
   )
 }
 
-export default Sorvetes
+export default SingleCategory
 

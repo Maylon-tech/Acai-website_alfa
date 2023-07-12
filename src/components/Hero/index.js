@@ -6,8 +6,8 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
   url("https://www.thespruceeats.com/thmb/mH7RWOmgg0xk7dz1pe2zHETdVGw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-162912489-584df2435f9b58a8cd096aaa.jpg");
   background-size: cover;
@@ -18,16 +18,58 @@ export const Container = styled.div`
   background: linear-gradient(79deg, rgba(204,160,232,1) 40%, rgba(221,125,167,0.927608543417367) 80%); */
 `
 
+export const TextContent = styled.div`
+  flex: 1;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2rem;
+
+`
+
+export const MiniImgContainer = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #C8AFD4;
+  }
+`
+  
+export const TitleRight = styled.h1`
+  color: #eee;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+`
+
+export const SubTitle = styled.h3`
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 60%;
+`
+
 
 export const InfoContent = styled.div`
   width: 40%;
-  height: 100%;
+  height: 80%;
   padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, .6);
+  justify-content: center;
+  flex: 1;
 ` 
 
 export const Logo = styled.div`

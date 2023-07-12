@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to="/">
             <Logo>
               <Image src={logo} />
-              <LogoText>Amazon</LogoText>
+              <LogoText>Açaí -Space</LogoText>
             </Logo>
           </Link>
           

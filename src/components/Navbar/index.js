@@ -4,7 +4,7 @@ import { mobile } from '../../responsive'
 export const Container = styled.div`
   max-width: 1480px;
   margin: 0 auto;
-  height: 100px;
+  height: 60px;
   background: #C8AFD4;
 
   ${mobile({ 
