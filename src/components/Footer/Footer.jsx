@@ -34,18 +34,23 @@ const Footer = () => {
         </Left>
 
         <Center>
-            <Title>Useful Links</Title>
+            <Title>Main Links</Title>
             <List>
                 <ListItem>Home</ListItem>
-                <ListItem>Cart</ListItem>
+                <ListItem>Cart</ListItem>       
+                <ListItem>Terms</ListItem>
+                <ListItem>My Account</ListItem>
+                <ListItem></ListItem>
+            </List>
+        </Center>
+        <Center>
+            <Title>Useful Links</Title>
+            <List>
                 <ListItem>Man Fashio</ListItem>
                 <ListItem>Woman Fashion</ListItem>
                 <ListItem>Accessories</ListItem>
                 <ListItem>Order Tracking</ListItem>
                 <ListItem>Wishlist</ListItem>
-                <ListItem>Terms</ListItem>
-                <ListItem>My Account</ListItem>
-                <ListItem></ListItem>
             </List>
         </Center>
 
@@ -64,7 +69,7 @@ const Footer = () => {
                 <MailOutline style={{ marginRight: "13px"}} />
                 contact@devMani.com
             </ContactItem>
-            <Payment style={{ marginRight: "13px"}} src="" />
+            
         </Right>
     </Container>
   )
