@@ -1,28 +1,28 @@
 import React from 'react'
 import cartImg from '../../assets/images/heroImg2.jpg'
 import { Container, 
-Wrapper, Title, 
-Top, Bottom, 
-TopButton, TopTexts, 
-TopText, Info, 
-Summary, 
-Product,
-ProductDetails,
-PriceDetails,
-Image,
-Details,
-ProductName,
-ProductId,
-ProductColor,
-ProductSize,
-ProductPrice,
-ProductAmountContainer,
-ProductAmount,
-SumTitle,
-SumItem,
-SumItemText,
-SumItemPrice,
-Button
+    Wrapper, Title, 
+    Top, Bottom, 
+    TopButton, TopTexts, 
+    TopText, Info, 
+    Summary, 
+    Product,
+    ProductDetails,
+    PriceDetails,
+    Image,
+    Details,
+    ProductName,
+    ProductId,
+    ProductColor,
+    ProductSize,
+    ProductPrice,
+    ProductAmountContainer,
+    ProductAmount,
+    SumTitle,
+    SumItem,
+    SumItemText,
+    SumItemPrice,
+    Button
 } from './index'
 import Navbar from '../../components/Navbar/Navbar'
 // import Banner from '../../components/Banner/Banner'
@@ -104,10 +104,10 @@ const Cart = () => {
                             <PriceDetails>
                                 <ProductAmountContainer>
                                     {/* <Add /> */}
-                                    <ProductAmount> 2 </ProductAmount>
+                                    <ProductAmount>Quantidade: 2 </ProductAmount>
                                     {/* <Remove /> */}
                                 </ProductAmountContainer>
-                                <ProductPrice> $ 45</ProductPrice>
+                                <ProductPrice>Preco: $45</ProductPrice>
                             </PriceDetails>
 
                         </Product>

@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.div`
   height: 100vh;
   background-color: #eee;
+  padding: 2rem;
+  position: relative;
 
     display: flex;
     flex-direction: column;
@@ -15,7 +17,18 @@ export const HeaderItem = styled.div`
    
 `
 
-export const BackBtn = styled.div``
+export const BackBtn = styled.button`
+  background-color: rgb(120,39,144);
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+`
 
 export const ContainerItems = styled.div`
  
@@ -42,6 +55,12 @@ export const ImageProd = styled.img`
 
 export const ContentRight = styled.div`
   flex: 1;
+  
+  > h3 {
+    font-size: 1.8rem;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   
 `
 

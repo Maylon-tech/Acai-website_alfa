@@ -1,7 +1,8 @@
 import React from 'react'
+import logo from '../../assets/images/LogoFruit.png'
 import { 
     Center, ContactItem, 
-    Container, Desc, Left, 
+    Container, Desc, Image, Left, 
     List, ListItem, Logo,
      Right, SocialContainer, 
      SocialIcon, Title 
@@ -12,7 +13,9 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>Logo</Logo>
+            <Logo>
+                <Image src={logo} />
+            </Logo>
             <Desc>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore excepturi 
                 accusamus commodi quisquam esse illum odio id maiores neque repellat, dolor quos.
@@ -58,16 +61,16 @@ const Footer = () => {
             <Title>Contact</Title>
 
             <ContactItem>
-                <Room style={{ marginRight: "13px"}} />
-                622 Dixie path, South Tobirama 98776
+                <Room style={{ marginRight: "8px"}} />
+                <span>622 Dixie path, South Tobirama 98776</span>
             </ContactItem>
             <ContactItem>
-                <Phone style={{ marginRight: "13px"}} />
-                +99 8766 3328
+                <Phone style={{ marginRight: "8px"}} />
+                <span>+99 8766 3328</span>
             </ContactItem>
             <ContactItem>
-                <MailOutline style={{ marginRight: "13px"}} />
-                contact@devMani.com
+                <MailOutline style={{ marginRight: "8px"}} />
+                <span>contact@devMani.com</span>
             </ContactItem>
             
         </Right>

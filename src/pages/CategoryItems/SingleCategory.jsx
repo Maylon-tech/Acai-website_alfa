@@ -48,14 +48,14 @@ const SingleCategory = () => {
             quas, eligendi inventore itaque tempore id iusto! Eveniet.
           </Description>
           <OptionsContent>
-            <OptionItem> More Fluits</OptionItem>
-            <OptionItem> More Yorguts</OptionItem>
-            <OptionItem> More Flakes and Aveia</OptionItem>
+            <OptionItem> Mais Frutas</OptionItem>
+            <OptionItem> Mais Yorguts</OptionItem>
+            <OptionItem> Mais Cereais e Aveia</OptionItem>
           </OptionsContent>
 
           <Buttons>
-            <AddCart>Add to Cart</AddCart>
-            <WishList>Save to Wish List</WishList>
+            <AddCart>Adicionar ao Carrinho</AddCart>
+            <WishList>Favoritos</WishList>
           </Buttons>
 
         </ContentRight>

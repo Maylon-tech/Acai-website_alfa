@@ -30,8 +30,6 @@ const Hero = () => {
           <img src={heroImg} alt="img" />
         </Logo>
 
-        <Title>Açaí  Space</Title>
-
         <ButtonContent>
           <ButtonDelivery onClick={() => navigate("/ProductList")}>
             Produtos
